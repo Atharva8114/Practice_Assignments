@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+requests
+qdrant-client
+python-dotenv
+pypdf
+tiktoken
