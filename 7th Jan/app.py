@@ -2,13 +2,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from fastapi import FastAPI
-from routers import query  # import router
 
-app = FastAPI(
-    title="Ollama Vector API",
-    description="Stores Ollama query embeddings in Qdrant",
-    version="1.0.0"
-)
+from routers import query, documents
 
-# Include the router
+
+app = FastAPI(title="Ollama Vector API")
+
+
 app.include_router(query.router)
+app.include_router(documents.router)
+
+@app.get("/")
+def root():
+    return {"message": "API is running"}
