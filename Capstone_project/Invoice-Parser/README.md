@@ -238,7 +238,7 @@ Example queries:
 
 ---
 
-## 🧾 Extracted Invoice Schema
+## 🧾 Expected Invoice Schema
 
 | Field          | Description   | Example    |
 | -------------- | ------------- | ---------- |
@@ -368,3 +368,4 @@ The current implementation of this project **performs significantly better on ge
 ---
 
 ### ⭐ If you like this project, consider starring the repository!
+
